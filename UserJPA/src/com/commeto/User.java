@@ -27,13 +27,31 @@ public class User {
 	private String firstName;
 	@Column(name="lastName", nullable=false)
 	private String lastName;
-//	@Column(table="user_group", name="idGroup", nullable=false)
-//	private String group;
+	@Column(table="user_group", name="idGroup", nullable=false)
+	private String group;
 	
 	/*
 	 * Constructors
 	 */
+	public User(){
+		
+	}
 	
+	public User(String username, String password, String email, String firstName, String lastName){
+		this.username = username;
+		this.password = password;
+		this.email = email;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	
+	public User(User user){
+		this.username = user.username;
+		this.password = user.password;
+		this.email = user.email;
+		this.firstName = user.firstName;
+		this.lastName = user.lastName;
+	}
 	
 	/*
 	 * Methods
@@ -69,10 +87,10 @@ public class User {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-//	public String getGroup(){
-//		return this.group;
-//	}
-//	public void setGroup(String group){
-//		this.group = group;
-//	}
+	public String getGroup(){
+		return this.group;
+	}
+	public void setGroup(String group){
+		this.group = group;
+	}
 }
