@@ -33,15 +33,17 @@ public class User {
 	/*
 	 * Constructors
 	 */
+	
 	public User(){
 	}
 	
-	public User(String username, String password, String email, String firstName, String lastName){
+	public User(String username, String password, String email, String firstName, String lastName, String group){
 		this.username = username;
 		this.password = password;
 		this.email = email;
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.group = group;
 	}
 	
 	public User(User user){
@@ -50,6 +52,7 @@ public class User {
 		this.email = user.email;
 		this.firstName = user.firstName;
 		this.lastName = user.lastName;
+		this.group = user.group;
 	}
 	
 	/*
