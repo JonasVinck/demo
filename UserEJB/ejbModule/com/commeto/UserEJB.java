@@ -18,7 +18,7 @@ public class UserEJB {
 		User entity = null;
 		
 		try{
-			Query query = em.createQuery("SELECT p FROM Person p WHERE p.username = ?1");
+			Query query = em.createQuery("SELECT u FROM user u WHERE u.username = ?1");
 			query.setParameter(1, userName);
 			entity = (User) query.getSingleResult();
 		} catch (NoResultException e) {
