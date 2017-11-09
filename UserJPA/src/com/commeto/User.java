@@ -33,21 +33,7 @@ public class User {
 	/*
 	 * Constructors
 	 */
-	public User(String username, String password, String email, String firstName, String lastName){
-		this.username = username;
-		this.password = password;
-		this.email = email;
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
 	
-	public User(User user){
-		this.username = user.username;
-		this.password = user.password;
-		this.email = user.email;
-		this.firstName = user.firstName;
-		this.lastName = user.lastName;
-	}
 	
 	/*
 	 * Methods
