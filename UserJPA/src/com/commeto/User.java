@@ -34,7 +34,6 @@ public class User {
 	 * Constructors
 	 */
 	public User(){
-		
 	}
 	
 	public User(String username, String password, String email, String firstName, String lastName){
