@@ -1,0 +1,2 @@
+#deleting remote branches
+	git push origin --delete <branch name>
