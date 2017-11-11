@@ -88,4 +88,6 @@ hs_err_pid*
 ## ignoring target file
 target/
 
+desktop.ini
+
 # End of https://www.gitignore.io/api/java,eclipse,java-web
