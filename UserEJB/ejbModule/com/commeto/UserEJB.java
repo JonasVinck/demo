@@ -34,7 +34,7 @@ public class UserEJB {
 	public User createUser(User user) throws UsernameAlreadyExistsException{
 		
 		if(getUSer(user.getUsername) == null){
-			
+			System.out.println("New User");
 			/*
 			 * if no user found, persist user
 			 */

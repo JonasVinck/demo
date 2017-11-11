@@ -8,34 +8,34 @@
   <title>Create a new user</title> 
 </h:head>
 <h:body>
-  <h1>Create a new book</h1>
+  <h1>Create a new user</h1>
   <hr/>
   <h:form>
   	<h:panelGrid columns="2"> 
-	  	<h:outputLabel value="ISBN : "/>
-	  	<h:inputText value="#{bookController.book.isbn}"/>
+	  	<h:outputLabel value="Username : "/>
+	  	<h:inputText value="#{userController.user.username}"/>
 	 
-	    <h:outputLabel value="Title :"/>
-	    <h:inputText value="#{bookController.book.title}"/>
+	    <h:outputLabel value="Password :"/>
+	    <h:inputText value="#{userController.user.password}"/>
 	 
-	    <h:outputLabel value="Price : "/>
-	    <h:inputText value="#{bookController.book.price}"/>
+	    <h:outputLabel value="Email : "/>
+	    <h:inputText value="#{userController.user.email}"/>
 	 
-	    <h:outputLabel value="Description  : "/>      
-	    <h:inputTextarea value="#{bookController.book.description}" cols="20" rows="5"/>
+	    <h:outputLabel value="Firstname  : "/>      
+	    <h:inputText value="#{userController.user.firstname}"/>
 	 
-	    <h:outputLabel value="Number of pages : "/>      
-	    <h:inputText value="#{bookController.book.nbOfPage}"/>
+	    <h:outputLabel value="Lastname : "/>      
+	    <h:inputText value="#{userController.user.lastname}"/>
 	 
-	    <h:outputLabel value="Illustrations : "/>      
-	    <h:selectBooleanCheckbox value="#{bookController.book.illustrations}"/>
+	    <h:outputLabel value="Group : "/>      
+	    <h:inputText value="#{userController.user.group}"/>
  
     </h:panelGrid>    
-    <h:commandButton value="Create a book" action="#{bookController.doCreateBook}"/>
+    <h:commandButton value="Create a user" action="#{userController.createUser}"/>
  
   </h:form>
   <hr/>  
-  <h:outputText value="APress - Beginning Java EE 7" style="font-style: italic"/>
+  <h:outputText value="New User Demo" style="font-style: italic"/>
 </h:body> 
 </html>
 
