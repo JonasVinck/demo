@@ -1,13 +1,9 @@
 package com.commeto;
 
 import javax.ejb.*;
-
-public class UserEJBClient {
-
 	@Local
-	public interface UserEJBClientLocal{
+	public interface UserEJBClient{
 		
 		public User getUser(String username);
-		public User createUser(User user);
+		public void createUser(User user);
 	}
-}

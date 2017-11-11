@@ -8,7 +8,7 @@ import org.eclipse.persistence.exceptions.i18n.QueryExceptionResource;
 import exceptions.UsernameAlreadyExistsException;
 
 @Stateless
-public class UserEJB {
+public class UserEJB  implements UserEJBClient{
 
 	@PersistenceContext(unitName = "useCase1")
 	private EntityManager em;
@@ -31,18 +31,17 @@ public class UserEJB {
 		
 	}
 	
-	public User createUser(User user) throws UsernameAlreadyExistsException{
+	public void createUser(User user){
 		
 		if(getUser(user.getUsername()) == null){
-			System.out.println("New User");
+			System.out.println("EJB maakt nieuwe user aan");
+			System.out.println(user.getUsername());
 			/*
 			 * if no user found, persist user
 			 */
 			em.persist(user);
 		} else{
-			throw new UsernameAlreadyExistsException("The username is already taken");
+			System.out.println("User bestaat al");
 		}
-		
-		return user;
 	}
 }
