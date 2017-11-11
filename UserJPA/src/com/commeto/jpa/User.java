@@ -1,4 +1,4 @@
-package com.commeto;
+package com.commeto.jpa;
 
 import javax.persistence.Column;
 import javax.persistence.PrimaryKeyJoinColumn;

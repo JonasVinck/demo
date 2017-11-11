@@ -4,7 +4,7 @@
 	
 	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<jta-data-source>jdbc/user</jta-data-source>
-		<class>com.commeto.User</class>
+		<class>com.commeto.jpa.User</class>
 		
 		<properties>
 			<property name="eclipselink.logging.level" value="INFO"/>

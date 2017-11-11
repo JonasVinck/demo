@@ -5,8 +5,8 @@ import javax.inject.Named;
 import javax.faces.view.ViewScoped;
 import javax.ejb.EJB;
 
-import com.commeto.User;
-import com.commeto.UserEJBClient;
+import com.commeto.ejbClient.UserEJBClient;
+import com.commeto.jpa.User;
 
 @Named
 @ViewScoped

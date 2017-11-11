@@ -1,6 +1,8 @@
-package com.commeto;
+package com.commeto.ejbClient;
 
 import javax.ejb.*;
+
+import com.commeto.jpa.User;
 	@Local
 	public interface UserEJBClient{
 		
